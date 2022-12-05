@@ -11,6 +11,9 @@ export const Container = () => {
   return (
     <div className= 'container' >
       <div className='results'> Lose Win</div>
+      {/* <HangmanDrawing />
+      <HangmanWord />
+      <Keyboard /> */}
     </div>
   )
 }
