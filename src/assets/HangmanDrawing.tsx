@@ -1,7 +1,13 @@
 import React from 'react'
+import './HangmanDrawing.css'
 
 export const HangmanDrawing = () => {
   return (
-    <div>HangmanDrawing</div>
+    <section className='hangman-drawing'>
+        <div className='top'></div>
+        <div className='middle'/>
+        <div className='bottom' /> 
+    </section>
+    
   )
 }
