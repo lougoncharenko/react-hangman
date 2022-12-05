@@ -6,3 +6,8 @@
     margin: 0 auto;
     align-items: center; 
 }
+
+.results {
+    font-size: 2 rem;
+    text-align: center;
+}
