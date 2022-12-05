@@ -1,0 +1,9 @@
+.hangman-drawing{
+    position: relative;
+}
+
+.bottom {
+    height: 10px;
+    width: 250px;
+    background-color: black;
+}
