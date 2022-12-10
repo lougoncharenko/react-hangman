@@ -9,10 +9,16 @@ export const Container = () => {
     const [wordGuess, setWordGuess] = useState(() => {
       return words[Math.floor(Math.random() * words.length)]
     })
-    const [guessedLetters, setGueesedLetters] = useState<string[]>([])
+    const [guessedLetters, setGuessedLetters] = useState<string[]>([])
     const incorrectLetters = guessedLetters.filter(
       letter => !wordGuess.includes(letter))
     
+    const addGuessedLetter = (letter:string) => {
+      if (guessedLetters.includes(letter)) return
+
+      setGuessedLetters(currentLetters => [...currentLetters, letter])
+
+    }
     useEffect(() => {
       const handler = (e: KeyboardEvent) => {
         const key = e.key
