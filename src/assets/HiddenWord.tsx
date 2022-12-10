@@ -2,7 +2,7 @@ import React from 'react';
 import './HiddenWord.css'
 
 interface Props {
-  guessedLetters: Array<string>,
+  guessedLetters: string[],
   word: string
 }
 
