@@ -10,11 +10,13 @@ export const Container = () => {
       return words[Math.floor(Math.random() * words.length)]
     })
     const [guessedLetters, setGueesedLetters] = useState<string[]>([])
-
+    const incorrectLetters = guessedLetters.filter(
+      letter => !wordGuess.includes(letter))
+      
   return (
     <div className= 'container' >
       <div className='results'> Lose Win</div>
-      <HangmanDrawing />
+      <HangmanDrawing numberOfGuesses = {incorrectLetters.length}/>
       <HiddenWord />
       <div style={{
         alignSelf: 'stretch'
