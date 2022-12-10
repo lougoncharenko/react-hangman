@@ -15,24 +15,23 @@ export const Container = () => {
     
     const addGuessedLetter = (letter:string) => {
       if (guessedLetters.includes(letter)) return
-
       setGuessedLetters(currentLetters => [...currentLetters, letter])
 
     }
+
     useEffect(() => {
       const handler = (e: KeyboardEvent) => {
         const key = e.key
+        alert(key)
         if (!key.match(/^[a-z]$/)) return
         e.preventDefault()
-        addGuessedLetter(key)
-      
-
+        setGuessedLetters(currentLetters => [...currentLetters, key])
       }
-      document.addEventListener('keypress', handler)
+      document.addEventListener("keypress", handler)
       return () => {
-        document.removeEventListener('keypress', handler)
+      document.removeEventListener("keypress", handler)
       }
-    }, []);
+    }, [])
       
   return (
     <div className= 'container' >
