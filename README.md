@@ -1,5 +1,15 @@
 # react-hangman-game
 
+## About the Project:
+
+|       |                                                                                                                                                                                                     |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| About | A web application game called hangman where user selects letters to try to guess the secret word.                                                                                |
+| Author  | [Louisa Goncharenko](https://github.com/lougoncharenko) |
+| Goal  | Develop a robust application  using the react framework and Vite front-end tool.                                   |
+|       |                                                                                                                                                                                                     |
+
+
 ## Installation
 - clone repo and run `npm install` in base directory
 
