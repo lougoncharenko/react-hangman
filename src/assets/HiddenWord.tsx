@@ -7,8 +7,6 @@ interface Props {
 }
 
 const HiddenWord = ({guessedLetters, word}: Props) => {
-    // const word = 'test'
-    // const guessedLetters = 't'
   return (
     <div className='hidden-word-container'> 
       {word.split('').map((letter, index) => (
