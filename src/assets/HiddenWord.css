@@ -6,3 +6,7 @@
     text-transform: uppercase;
     font-family: monospace;
 }
+
+.hidden-letters {
+    border-bottom: .1em solid black;
+}
