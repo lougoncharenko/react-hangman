@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import words from './wordList.json'
 import './Container.css'
 import { HangmanDrawing } from './HangmanDrawing'
@@ -12,6 +12,21 @@ export const Container = () => {
     const [guessedLetters, setGueesedLetters] = useState<string[]>([])
     const incorrectLetters = guessedLetters.filter(
       letter => !wordGuess.includes(letter))
+    
+    useEffect(() => {
+      const handler = (e: KeyboardEvent) => {
+        const key = e.key
+        if (!key.match(/^[a-z]$/)) return
+        e.preventDefault()
+        addGuessedLetter(key)
+      
+
+      }
+      document.addEventListener('keypress', handler)
+      return () => {
+        document.removeEventListener('keypress', handler)
+      }
+    }, []);
       
   return (
     <div className= 'container' >
