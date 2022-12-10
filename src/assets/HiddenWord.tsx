@@ -1,9 +1,10 @@
 import React from 'react';
+import './HiddenWord.css'
 
 const HiddenWord = () => {
   return (
-    <div>
-      
+    <div className='hidden-word-container'> 
+      Text
     </div>
   );
 }

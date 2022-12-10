@@ -1,4 +1,4 @@
-.container {
+.hidden-word-container {
     display: flex;
     gap: .25em;
     font-size: 6rem;
