@@ -16,7 +16,12 @@ export const Container = () => {
       <div className='results'> Lose Win</div>
       <HangmanDrawing />
       <HiddenWord />
-      <Keyboard />
+      <div style={{
+        alignSelf: 'stretch'
+      }}>
+        <Keyboard />
+      </div>
+      
     </div>
   )
 }
