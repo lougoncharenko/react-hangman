@@ -20,7 +20,7 @@ export const Container = () => {
       numberOfGuesses = {incorrectLetters.length}
       />
       <HiddenWord 
-      guessedLetter = {guessedLetters}
+      guessedLetters = {guessedLetters}
       word = {wordGuess}
       />
       <div style={{

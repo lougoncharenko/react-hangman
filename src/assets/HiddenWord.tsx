@@ -1,9 +1,14 @@
 import React from 'react';
 import './HiddenWord.css'
 
-const HiddenWord = () => {
-    const word = 'test'
-    const guessedLetters = 't'
+interface Props {
+  guessedLetters: Array<string>,
+  word: string
+}
+
+const HiddenWord = ({guessedLetters, word}: Props) => {
+    // const word = 'test'
+    // const guessedLetters = 't'
   return (
     <div className='hidden-word-container'> 
       {word.split('').map((letter, index) => (
