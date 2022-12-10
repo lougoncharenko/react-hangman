@@ -33,7 +33,12 @@ const Keyboard = () => {
   return (
     <div style = {{display:'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(75px, 1fr', gap: '.5rem'}}>
     {KEYS.map((key, index) => (
-      <button key={index}>{key}</button>
+      <button 
+      key={index}
+      className='buttons'
+      >
+        {key}
+      </button>
     ))}
     </div>
   )
