@@ -87,10 +87,16 @@ const BODY = (
   />
 )
 
+const BodyParts = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, RIGHT_LEG, LEFT_LEG]
 
-export const HangmanDrawing = () => {
+interface Props {
+  numberOfGuesses: number
+}
+
+export const HangmanDrawing = ({numberOfGuesses}: Props) => {
   return (
     <section className='hangman-drawing'>
+      {BodyParts.splice(0, numberOfGuesses)}
         <div className='side' />
         <div className='top' />
         <div className='middle'/>
