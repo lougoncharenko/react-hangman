@@ -16,8 +16,13 @@ export const Container = () => {
   return (
     <div className= 'container' >
       <div className='results'> Lose Win</div>
-      <HangmanDrawing numberOfGuesses = {incorrectLetters.length}/>
-      <HiddenWord />
+      <HangmanDrawing 
+      numberOfGuesses = {incorrectLetters.length}
+      />
+      <HiddenWord 
+      guessedLetter = {guessedLetters}
+      word = {wordGuess}
+      />
       <div style={{
         alignSelf: 'stretch'
       }}>
