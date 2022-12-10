@@ -96,7 +96,7 @@ interface Props {
 export const HangmanDrawing = ({numberOfGuesses}: Props) => {
   return (
     <section className='hangman-drawing'>
-      {BodyParts.splice(0, numberOfGuesses)}
+      {BodyParts.slice(0, numberOfGuesses)}
         <div className='side' />
         <div className='top' />
         <div className='middle'/>
