@@ -22,10 +22,9 @@ export const Container = () => {
     useEffect(() => {
       const handler = (e: KeyboardEvent) => {
         const key = e.key
-        alert(key)
         if (!key.match(/^[a-z]$/)) return
         e.preventDefault()
-        setGuessedLetters(currentLetters => [...currentLetters, key])
+        addGuessedLetter(key)
       }
       document.addEventListener("keypress", handler)
       return () => {
