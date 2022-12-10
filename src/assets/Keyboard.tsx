@@ -1,4 +1,6 @@
 import React from 'react'
+import './Keyboard.css'
+
 const KEYS = [
   "a",
   "b",
@@ -35,7 +37,7 @@ const Keyboard = () => {
     {KEYS.map((key, index) => (
       <button 
       key={index}
-      className='buttons'
+      className='btn'
       >
         {key}
       </button>
